@@ -22,8 +22,10 @@ ActiveRecord::Schema.define(version: 20150320000207) do
   end
 
   create_table "plans", force: true do |t|
-    t.string  "name"
-    t.decimal "price"
+    t.string   "name"
+    t.decimal  "price"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|
