@@ -1,6 +1,13 @@
 <div class="container">
-  <div class="well">
-    <%= @user %>
-
+  <div class="">
+    <div class="well">
+      <%= @user.profile.first_name %> <%= @user.profile.last_name %></br>
+      <%= @user.profile.job_title %></br>
+      <% if current_user.plan_id == 2 %>
+        <%= @user.profile.phone_number %></br>
+        <%= @user.profile.contact_email %></br>
+        <%= @user.profile.description %>
+      <% end %>
+    </div>
   </div>
 </div>
