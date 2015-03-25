@@ -17,9 +17,6 @@ class ProfilesController < ApplicationController
       render action: :new
     end
   end
-
-  def update
-  end
   
   private
   def profile_params
